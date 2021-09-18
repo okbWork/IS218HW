@@ -1,0 +1,38 @@
+<h1>GIT & DOCKER COMMANDS TO MAKE 1,000,000,000,000,000</h1>
+<h2>Command Position: 1</h2>
+<table>
+	<tr> <h2> <td>Command</td>	<td>Minimum Args</td>	<td>Purpose</td> <td>Example</td> </h2> </tr>
+	<tr>		<td>pwd</td>	<td>0</td>	<td>present working directory. Single term command that returns the directory coomands are currently being sent in.</td>	<td>"pwd"</td> 	</tr>
+	<tr>		<td>ls</td>	<td>0</td>	<td> gives all files present. returns folders, files, and other items that are located within the pwd</td>	<td>"ls"</td> 	</tr>
+	<tr>		<td>cd</td>	<td>1+</td>	<td>change directory changes the pwd to whatever directory the user chooses. "cd " - relative path. move to a child folder/file of the pwd. "cd/" - absolute path. move to a completely different folder. Does not need to be a child or parent folder</td>	<td>"cd .."/"cd apache-website"/"cd/Users/User/apache-website"</td></tr>
+	<tr>		<td>mkdir</td>	<td>1</td>	<td>creates directory with a new name within the current directory</td>	<td>"mkdir apache-website"</td>	</tr>
+	<tr>		<td>touch</td>	<td>1</td>	<td>creates file with a new name within the current directory</td>	<td>"touch index.html"</td>	</tr>
+	<tr>		<td>rm</td>	<td>1+</td>	<td>deletes files and folders</td>	<td>"rm -r apache-website/"/"rm index.html"</td>	</tr>
+	<tr>		<td>mv</td>	<td>2</td>	<td>renames a file OR moves a file to another locaiton</td>	<td>"mv README.md apache-website/"/"mv README.md READDEEZ.md"</td>	</tr>
+	<tr>		<td>git</td>	<td>1+</td>	<td>calls git to use Git commands</td>	<td>"git status"/"git init"/"git commit"...</td>	</tr>
+</table>
+
+<h2>Command Position: 2</h2>
+<table>
+	<tr> <h2> <td>Command</td>	<td>Follows</td>	<td>Purpose</td> <td>Example</td> </h2> </tr>
+	<tr><td>-r</td>	<td>rm</td>	<td>recursive. deletes not only the folder but all of the files and folders within the folder</td> <td>"rm -r apache-website"</td></tr>
+	<tr><td>..</td>	<td>cd</td>	<td>move to parent directory</td> <td>"cd .."</td></tr>
+	<tr><td>init</td>	<td>git</td>	<td>creates an empty github repository. everything inside the current directory becomes part of the version control (dont send ur entire hard drive lol)</td> <td>"git init"</td></tr>
+	<tr><td>-f</td>	<td>rm</td>	<td>forces its removal regardless of any possible issues</td> <td>"rm -rf apache-websote"</td></tr>
+	<tr><td>status</td>	<td>git</td>	<td>checks for any new changes or if any files have not been committed into the repository</td> <td>"git status"</td></tr>
+	<tr><td>add</td>	<td>git</td>	<td>notifies git of which files have been changed are going to be comittted</td> <td>"git add"</td></tr>
+	<tr><td>commit</td>	<td>git</td>	<td>in the repository, changes the old version with the newly coded version</td> <td>"git commit -m "made changes!?!??!""</td></tr>
+	<tr><td>push</td>	<td>git</td>	<td>put the committed file changes onto the repository branch</td> <td>"git push -u origin master"</td></tr>
+	<tr><td>remote</td>	<td>git</td>	<td>???</td> <td>"git remote add origin http://www.coolguys.com/swag/.git/"</td></tr>
+	<tr><td>checkout</td>	<td>git</td>	<td>switches to new branch</td> <td>"git checkout -b deez"</td></tr>
+	<tr><td>branch</td>	<td>git</td>	<td>creates a new branch</td> <td>"git branch deez"</td></tr>
+	<tr><td>merge</td>	<td>git</td>	<td>brings 2 branches together</td> <td>"git merge deez master"</td></tr>
+
+	<h2>Command Position: 3</h2>
+	<table>
+		<tr> <h2> <td>Command</td>	<td>Follows</td>	<td>Purpose</td> <td>Example</td> </h2> </tr>
+		<tr> <td>-m</td>	<td>commit</td>	<td>add message with the commit</td> <td>"git commit -m "made changes!?!??!""</td> </tr>
+		<tr> <td>-u</td>	<td>push</td>	<td>??????</td> <td>"git push -u origin"</td> </tr>
+		<tr> <td>set-url</td>	<td>remote</td>	<td>change the url of the online repository</td> <td>"git remote set-url origin http://www.coolguys.com/swag/.git/"</td> </tr>
+		<tr> <td>add</td>	<td>remote</td>	<td>create the url of the online repository</td> <td>"git remote add origin http://www.coolguys.com/swag/.git/"</td> </tr>
+		<tr> <td>-b</td>	<td>checkout</td>	<td>create a new branch when checking out</td> <td>"git checkout -b "</td> </tr>
